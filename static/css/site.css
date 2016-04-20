@@ -8,26 +8,26 @@
  */
 
 html {
-  height: 100%;
+    height: 100%;
 }
 body {
-  font-size: x-large;
-  font-family: monospace;
-  height: 100%;
-  overflow-y: hidden;
+    font-size: x-large;
+    font-family: monospace;
+    height: 100%;
+    overflow-y: hidden;
 }
 .fill {
-  min-height: 100%;
-  height: 100%;
+    min-height: 100%;
+    height: 100%;
 }
 h1 {
-  color: magenta;
+    color: magenta;
 }
 hr {
-  border-top: 2px solid black;
+    border-top: 2px solid black;
 }
 input[type="text"] {
-  font-size: larger;
+    font-size: larger;
 }
 input[type="submit"] {
     display: none;
@@ -38,21 +38,23 @@ input[type="submit"] {
  */
 
 #welcome {
-  background-color: black;
+    background-image: url("./img/background.jpg");
+    background-attachment: fixed;
+    background-color: black;
 }
 #welcome .welcome-text {
-  font-size: xx-large;
-  color: aqua;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    font-size: xx-large;
+    color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #welcome .welcome-text .register {
-  font-size: 2em;
-  color: aqua;
-  margin-top: 1em;
-  margin-bottom: 1em;
+    font-size: 2em;
+    color: aqua;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 /**
@@ -60,9 +62,9 @@ input[type="submit"] {
  */
 
 #registration .instructions {
-  font-size: larger;
-  margin-bottom: 2em;
-  margin-top: 2em;
+    font-size: larger;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 /**
@@ -70,16 +72,17 @@ input[type="submit"] {
  */
 
 #success {
-  background-color: aqua;
+    background-color: aqua;
 }
 
 /**
  * Error screen.
  */
+
 #error {
-  color: magenta;
-  background-color: black;
-  font-size: x-large;
+    color: magenta;
+    background-color: black;
+    font-size: x-large;
 }
 #error hr {
     border-top: 2px solid magenta;
@@ -91,14 +94,14 @@ input[type="submit"] {
  */
 
 .blinking-cursor {
-  font-weight: 100;
-  animation: 1s blink step-end infinite;
+    font-weight: 100;
+    animation: 1s blink step-end infinite;
 }
 @keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: yellow;
-  }
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: yellow;
+    }
 }
