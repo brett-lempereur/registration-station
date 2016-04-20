@@ -158,9 +158,9 @@ StarField.prototype._renderFrame = function(elapsedTime) {
 
   window.requestAnimationFrame(this._renderFrame.bind(this));
 
-  // Skip frames unless at least 30ms have passed since the last one
+  // Skip frames unless at least 60ms have passed since the last one
   // (Cap to ~30fps)
-  if (timeSinceLastFrame >= 30 || !this.prevFrameTime) {
+  if (timeSinceLastFrame >= 60 || !this.prevFrameTime) {
     this.prevFrameTime = elapsedTime;
     this._updateStarField();
     this._renderStarField();
