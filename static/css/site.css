@@ -8,14 +8,144 @@
  */
 
 html {
-    height: 100%;
+  height: 100%;
 }
-
 body {
-    height: 100%;
+  font-size: x-large;
+  font-family: monospace;
+  height: 100%;
+}
+.fill {
+  min-height: 100%;
+  height: 100%;
+}
+h1 {
+  color: magenta;
+}
+hr {
+  border-top: 2px solid black;
 }
 
-.fill {
-    min-height: 100%;
-    height: 100%;
+/**
+ * Welcome screen.
+ */
+
+#welcome {
+  background-color: black;
+}
+#welcome .welcome-text {
+  font-size: xx-large;
+  color: aqua;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#welcome .welcome-text .register {
+  font-size: 2em;
+  color: aqua;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/**
+ * Registration screen.
+ */
+
+#registration .instructions {
+  font-size: larger;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+/**
+ * Success screen.
+ */
+
+#success {
+  background-color: aqua;
+}
+
+/**
+ * Error screen.
+ */
+#error {
+  color: magenta;
+  background-color: black;
+  font-size: x-large;
+}
+
+/**
+ * Starfield, courtesy of Keith Clark.
+ */
+
+#space, .stars {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.stars {
+  background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: zoom 5s infinite;
+  opacity: 0;
+}
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 1s;
+}
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 2s;
+}
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 3s;
+}
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 4s;
+}
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
+  }
+  85% {
+    opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+
+/**
+ * Blinking cursor animation, courtesy of Artem Gordinsky from
+ * http://codepen.io/ArtemGordinsky/pen/GnLBq.
+ */
+
+.blinking-cursor {
+  font-weight: 100;
+  color: yellow;
+  animation: 1s blink step-end infinite;
+}
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
 }

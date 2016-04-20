@@ -21,8 +21,21 @@
     <body>
 
         <div id="welcome" class="fill">
-            <div class="container">
-                <h1>Made Invaders</h1>
+            <div class="text-center welcome-text">
+                <img src="img/logo.png" width="768px" alt="Made Invaders Logo">
+                <div class="register">
+                  Register a tag
+                </div>
+                <div class="instructions">
+                  Place your RFID tag on the reader.<span class="blinking-cursor">&block;</span>
+                </div>
+            </div>
+            <div id="space">
+              <div class="stars"></div>
+              <div class="stars"></div>
+              <div class="stars"></div>
+              <div class="stars"></div>
+              <div class="stars"></div>
             </div>
         </div>
 
@@ -30,31 +43,37 @@
             <div class="container">
 
                 <h1>Enter your details</h1>
+                <hr>
+
+                <div class="instructions">
+                  Use the up (&uarr;) and down (&darr;) arrow keys to move
+                  between fields.
+                </div>
 
                 <form id="register" class="form-horizontal">
 
                     <!-- Hidden fields -->
-                    <input type="text" name="userId" value="Test" hidden >
+                    <input type="text" name="userId" hidden >
 
                     <!-- Visible fields -->
                     <div class="form-group">
-                        <label for="name" class="col-sm-2 control-label">
+                        <label for="name" class="col-sm-3 control-label">
                             Please enter your name:
                         </label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" name="name" placeholder="Your Name">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="twitter" class="col-sm-2 control-label">
+                        <label for="twitter" class="col-sm-3 control-label">
                             Your twitter name:
                         </label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-9">
                             <input type="text" class="form-control" name="twitter" placeholder="@twitter">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
+                        <div class="col-sm-offset-3 col-sm-9">
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox" name="consent" checked>
@@ -63,13 +82,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Register</button>
-                        </div>
-                    </div>
 
                 </form>
+
+                <div class="instructions">
+                  Press the return key (&crarr;) to submit your
+                  details.<span class="blinking-cursor">&block;</span>
+                </div>
 
             </div>
         </div>
@@ -77,13 +96,47 @@
         <div id="success" class="fill">
             <div class="container">
                 <h1>Success</h1>
+                <hr>
+                <p>
+                  You're registered on the system and good to go.
+                </p>
+                <p>
+                  Good luck!<span class="blinking-cursor">&block;</span>
+                </p>
             </div>
         </div>
 
         <div id="error" class="fill">
-            <div class="container">
-                <h1>Oops</h1>
-            </div>
+          <div class="container">
+            <h1>Guru Meditation</h1>
+            <hr>
+            <p>
+              A problem has been detected and Made Invaders has been shut down to prevent
+              damage to your computer.
+            </p>
+            <p>
+              The problem seems to be caused by the following file: brett.sys
+            </p>
+            <p>
+              ACCIDENTALLY_INITIATED_CRASH
+            </p>
+            <p>
+              If this is the first time you've seen this stop error screen, try to find
+              brett and tell him to come and fix it.  If this screen appears again, follow
+              these steps:
+            </p>
+            <p>
+              Check to make sure brett has had enough coffee.  If this is a new installation,
+              ask brett whether he touched the GitHub repository and forgot to tell anybody
+              about it.
+            </p>
+            <p>
+              Technical information:
+            </p>
+            <p>
+              *** FAIL: 0x000000e2 (0x00000000, 0x00000000, 0x00000000, 0x00000000)
+            </p>
+          </div>
         </div>
 
     </body>
