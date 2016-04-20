@@ -30,13 +30,7 @@
                   Place your RFID tag on the reader.<span class="blinking-cursor">&block;</span>
                 </div>
             </div>
-            <div id="space">
-              <div class="stars"></div>
-              <div class="stars"></div>
-              <div class="stars"></div>
-              <div class="stars"></div>
-              <div class="stars"></div>
-            </div>
+            <canvas id="canvas2d"></canvas>
         </div>
 
         <div id="registration" class="fill">
@@ -82,6 +76,9 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Inviisble but not hidden inputs -->
+                    <input type="submit" value="Submit">
 
                 </form>
 
@@ -139,6 +136,8 @@
             </p>
           </div>
         </div>
+
+        <script src="js/starfield.js"></script>
 
     </body>
 </html>
