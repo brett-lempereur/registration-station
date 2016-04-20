@@ -14,6 +14,7 @@ body {
   font-size: x-large;
   font-family: monospace;
   height: 100%;
+  overflow-y: hidden;
 }
 .fill {
   min-height: 100%;
@@ -24,6 +25,9 @@ h1 {
 }
 hr {
   border-top: 2px solid black;
+}
+input[type="text"] {
+  font-size: larger;
 }
 
 /**
@@ -73,6 +77,9 @@ hr {
   color: magenta;
   background-color: black;
   font-size: x-large;
+}
+#error hr {
+    border-top: 2px solid magenta;
 }
 
 /**
@@ -138,7 +145,6 @@ hr {
 
 .blinking-cursor {
   font-weight: 100;
-  color: yellow;
   animation: 1s blink step-end infinite;
 }
 @keyframes "blink" {
@@ -146,6 +152,6 @@ hr {
     color: transparent;
   }
   50% {
-    color: black;
+    color: yellow;
   }
 }
