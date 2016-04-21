@@ -1,0 +1,3 @@
+[submodule "rfid/lib/Adafruit-PN532"]
+	path = rfid/lib/Adafruit-PN532
+	url = https://github.com/adafruit/Adafruit-PN532
