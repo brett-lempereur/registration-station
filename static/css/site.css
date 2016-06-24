@@ -41,20 +41,31 @@ input[type="submit"] {
     background-image: url("./img/background.jpg");
     background-attachment: fixed;
     background-color: black;
+    padding-top: 20px;
 }
 #welcome .welcome-text {
-    font-size: xx-large;
+    font-size: 1.2em;
     color: aqua;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 #welcome .welcome-text .register {
-    font-size: 2em;
+    font-size: 1.5em;
     color: aqua;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+#welcome .score-tables {
+    padding-top: 40px;
+}
+#welcome .score-table {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-size: 0.8em;
+}
+#welcome .score-tables .title {
+    font-size: 1.2em;
+    color: magenta;
 }
 
 /**

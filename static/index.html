@@ -15,19 +15,68 @@
         <script src="js/jquery.js"></script>
         <script src="js/reconnecting-websocket.js"></script>
         <script src="js/client.js"></script>
+        <script src="js/scores.js"></script>
 
     </head>
 
     <body>
 
         <div id="welcome" class="fill">
-            <div class="text-center welcome-text">
-                <img src="img/logo.png" width="768px" alt="Made Invaders Logo">
-                <div class="register">
-                  Register a tag
+            <div class="container-fluid">
+                <div class="row text-center welcome-text">
+                    <img src="img/logo.png" width="768px" alt="Made Invaders Logo">
+                    <div class="register">
+                      Register a tag
+                    </div>
+                    <div class="instructions blinking-cursor">
+                      Place your RFID tag on the reader.<span class="blinking-cursor">&block;</span>
+                    </div>
                 </div>
-                <div class="instructions blinking-cursor">
-                  Place your RFID tag on the reader.<span class="blinking-cursor">&block;</span>
+                <div class="row score-tables">
+                    <div class="col-md-6 score-table">
+                        <div class="title">High Scores</div>
+                        <table id="top-scores" class="table scores">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 score-table">
+                        <div class="title">Recent Scores</div>
+                        <table id="recent-scores" class="table scores">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                                <tr><td>--</td><td>--</td><td>--</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
