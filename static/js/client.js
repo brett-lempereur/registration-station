@@ -64,7 +64,7 @@ function clearRegistration() {
   $('input[name=userId]').val('');
   $('input[name=name]').val('');
   $('input[name=twitter]').val('');
-  $('input[name=consent]').val(true);
+  $('input[name=consent]').val(false);
 }
 
 /**
