@@ -105,3 +105,11 @@ input[type="submit"] {
         color: yellow;
     }
 }
+@-webkit-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: yellow;
+    }
+}
