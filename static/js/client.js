@@ -9,7 +9,7 @@ const EVENTS = 'ws://localhost:1880/ws/events';
 const SPEED = 1000;
 
 // Input keyboard navigation.
-var inputs = ['input[name=name]', 'input[name=twitter]', 'input[name=consent]'];
+var inputs = ['input[name=name]', 'input[name=twitter]'];
 var currentInput = null;
 
 /**
@@ -65,6 +65,7 @@ function clearRegistration() {
   $('input[name=name]').val('');
   $('input[name=twitter]').val('');
   $('input[name=consent]').val(false);
+  document.activeElement.blur();
 }
 
 /**
