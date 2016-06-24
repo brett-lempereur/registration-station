@@ -10,12 +10,10 @@
  * given URI.
  */
 function updateTable(name, uri) {
-  $.get(uri, function (response) {
-    console.log(response);
-    var doc = JSON.parse(response);
+  $.get(uri, function (doc) {
     var content = '';
-    for (var i = 0; i < doc.length; i++) {
-      var timestamp = Date.parse(doc[i].timestamp);
+    for (var i = 0; i < Math.min(doc.length, 8); i++) {
+      var timestamp = new Date(doc[i].timestamp);
       content += '<tr>';
       content += '<td>' + doc[i].name + '</td>';
       content += '<td>' + timestamp.getHours() + ':' + timestamp.getMinutes() + '</td>';
@@ -28,10 +26,10 @@ function updateTable(name, uri) {
 
 // Update the top score table every fifteen seconds.
 window.setInterval(function () {
-  updateTable('top-scores', 'http://localhost:5000/api/top');
-}, 15000);
+  updateTable('#top-scores', 'http://localhost:5000/api/top');
+}, 5000);
 
 // Update the recent score table every fifteen seconds.
 window.setInterval(function () {
-  updateTable('recent-scores', 'http://localhost:5000/api/recent');
-}, 15000);
+  updateTable('#recent-scores', 'http://localhost:5000/api/recent');
+}, 5000);

@@ -38,8 +38,6 @@ input[type="submit"] {
  */
 
 #welcome {
-    background-image: url("./img/background.jpg");
-    background-attachment: fixed;
     background-color: black;
     padding-top: 160px;
 }
@@ -57,14 +55,16 @@ input[type="submit"] {
 #welcome .score-tables {
     padding-top: 80px;
 }
-#welcome .score-table {
+#welcome .scores {
     padding-left: 30px;
     padding-right: 30px;
     color: white;
     font-size: 0.8em;
 }
+#welcome .score-table tbody tr:first-child {
+    color: yellow;
+}
 #welcome .score-tables .title {
-    font-size: 1.2em;
     color: magenta;
 }
 
